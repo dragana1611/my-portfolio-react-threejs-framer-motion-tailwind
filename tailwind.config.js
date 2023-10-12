@@ -6,12 +6,7 @@ export default {
       primary: "Poppins ",
       body: "Poppins",
     },
-    container: {
-      padding: {
-        DEFAULT: "1rem",
-        lg: "3rem",
-      },
-    },
+    container: {},
     screens: {
       sm: "640px",
       md: "768px",
