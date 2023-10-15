@@ -1,11 +1,5 @@
-import React from 'react'
-
 const Footer = () => {
-  return (
-    <div>
-      footer
-    </div>
-  )
-}
+  return <div className='bg-[#050816]'>footer</div>;
+};
 
-export default Footer
+export default Footer;

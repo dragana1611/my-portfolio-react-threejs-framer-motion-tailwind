@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,7 +14,7 @@
   }
 
   body {
-    @apply min-w-full font-body text-gray-200  leading-6 bg-[#0c0c1d] flex justify-center border-2 border-red-500;
+    @apply min-w-full font-body text-gray-200  leading-6 bg-[#0c0c1d] flex justify-center;
   }
 
   h1,
@@ -33,7 +35,7 @@
   }
 
   .section {
-    @apply w-[90vw]  h-screen px-4 lg:px-20 py-12 lg:py-28  snap-center overflow-hidden;
+    @apply w-[90vw]  h-screen px-4 lg:p-10 py-8 snap-center overflow-hidden;
   }
 
   .section-title {

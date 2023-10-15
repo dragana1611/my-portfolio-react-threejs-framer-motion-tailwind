@@ -2,15 +2,15 @@ import { useState } from 'react';
 import { BsMoonStarsFill, BsSunFill } from 'react-icons/bs';
 
 const ThemeToggleButton = () => {
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [isLightTheme, setIsLightTheme] = useState(false);
 
   const toggleTheme = () => {
-    setIsDarkTheme(!isDarkTheme);
+    setIsLightTheme(!isLightTheme);
   };
 
   return (
-    <button className='text-5xl text-yellow-400' onClick={toggleTheme}>
-      {isDarkTheme ? <BsSunFill /> : <BsMoonStarsFill />}
+    <button className='text-5xl text-yellow' onClick={toggleTheme}>
+      {isLightTheme ? <BsSunFill /> : <BsMoonStarsFill />}
     </button>
   );
 };
