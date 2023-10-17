@@ -31,9 +31,14 @@ export default {
 
         "gradient-rainblue":
           "linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%)",
+        circles: 'url("./assets/images/bg-circles.png")',
+        circleStar: 'url("./assets/images/circle-star.svg")',
       }),
       content: {
-        brush: "url('./assets/images/brush.png')",        
+        brush: "url('./assets/images/brush.png')",
+      },
+      animation: {
+        "spin-slow": "spin 50s linear infinite",
       },
       lightMode: "class",
     },

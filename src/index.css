@@ -56,4 +56,8 @@
   .textarea {
     @apply resize-none w-full outline-none p-6 rounded-sm h-[200px] focus:outline focus:outline-1;
   }
+
+  .icons {
+    @apply text-xl md:text-2xl xl:text-3xl;
+  }
 }
