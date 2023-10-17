@@ -9,7 +9,7 @@ const ThemeToggleButton = () => {
   };
 
   return (
-    <button className='text-3xl text-yellow relative z-[100]' onClick={toggleTheme}>
+    <button className='text-xl lg:text-2xl text-yellow relative z-[100]' onClick={toggleTheme}>
       {isLightTheme ? <BsSunFill /> : <BsMoonStarsFill />}
     </button>
   );

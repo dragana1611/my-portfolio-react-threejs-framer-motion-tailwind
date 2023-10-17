@@ -3,9 +3,9 @@ import ThemeToggleButton from "./ThemeToggleButton";
 
 const Header = () => {
   return (
-    <header className='w-full h-16 xl:h-28 flex justify-between items-center'>
+    <header className='w-full h-14 xl:h-16 flex justify-between items-center'>
       <div className='h-full'>
-        <img className='w-full h-full' src={logo} alt='' />
+        <img className='w-full h-full object-cover' src={logo} alt='' />
       </div>
       <ThemeToggleButton />
     </header>

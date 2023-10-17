@@ -45,9 +45,9 @@
   .subtitle {
     @apply text-base  mb-16 lg:mb-24 max-w-[520px];
   }
-  .btn {
+  /* .btn {
     @apply py-4 px-7 font-medium bg-blue-900 text-white flex items-center justify-center rounded-sm  transition-all;
-  }
+  } */
 
   .input {
     @apply h-[60px] outline-none pl-6 w-full font-body text-[15px] rounded-sm focus:outline focus:outline-1;

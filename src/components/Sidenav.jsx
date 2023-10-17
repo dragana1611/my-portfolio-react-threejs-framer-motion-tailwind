@@ -14,7 +14,7 @@ const Sidenav = () => {
         <a href='#main'className="icons">
           <HiHome />
         </a>
-        <a href='#work' className="icons">
+        <a href='#services' className="icons">
           <HiRectangleGroup />
         </a>
         <a href='#projects' className="icons">

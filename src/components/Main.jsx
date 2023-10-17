@@ -25,8 +25,7 @@ const Main = () => {
               />
             </div>
             
-          </div>
-          <SocialIcons />
+          </div>          
         </div>
 
         {/* MAIN TEXT */}
@@ -101,7 +100,15 @@ const Main = () => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <SpinningBtn />
+            <div className="w-full flex justify-between">
+              <div className="lg:basis-1/2 flex flex-col justify-center items-center lg:items-start gap-7 p-5">
+                <p className="w-auto lg:text-xl text-yellow">Get in Touch</p>
+                <SocialIcons />
+              </div>
+              <div className="lg:basis-1/2">
+                <SpinningBtn />
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>

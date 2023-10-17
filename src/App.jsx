@@ -1,7 +1,8 @@
 import Sidenav from "./components/Sidenav";
 import Main from "./components/Main";
-import Work from "./components/Work.jsx";
+import Services from "./components/Services.jsx";
 import Projects from "./components/Projects";
+import Parallax from "./components/Parallax";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -16,8 +17,11 @@ function App() {
     <div className=''>      
       <Sidenav />
       <Main />
-      <Work />
+      <Parallax />
+      <Services />
+      <Parallax />
       <Projects />
+      <Parallax />
       <Contact />
       <Footer />
     </div>
