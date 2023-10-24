@@ -3,8 +3,8 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      primary: "Poppins ",
-      body: "Poppins",
+      primary: "Eudoxus Sans, sans-serif ",
+      body: "Eudoxus Sans, sans-serif",
     },
     container: {},
     screens: {
@@ -25,7 +25,7 @@ export default {
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
       },
-      backgroundImage: (theme) => ({
+      backgroundImage: () => ({
         "gradient-rainbow":
           "linear-gradient(81.66deg, #00B5EE 7.21%, #FF45A4 45.05%, #FFBA00 78.07%)",
 
@@ -34,6 +34,13 @@ export default {
         circles: 'url("./assets/images/bg-circles.png")',
         circleStar: 'url("./assets/images/circle-star.svg")',
       }),
+      dropShadow: {
+        'basis': '1px 1px 0 rgba(0, 0, 0, 1)',
+        'xl': [
+            '0 35px 35px rgba(0, 0, 0, 0.25)',
+            '0 45px 65px rgba(0, 0, 0, 0.15)'
+        ]
+      },
       content: {
         brush: "url('./assets/images/brush.png')",
       },

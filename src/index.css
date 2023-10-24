@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;600&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,7 +12,7 @@
   }
 
   body {
-    @apply min-w-full font-body text-gray-200  leading-6 bg-[#0c0c1d] flex justify-center;
+    @apply min-w-full font-body text-gray-200  leading-6 bg-[#0c0c1d] flex flex-col justify-center m-auto;
   }
 
   h1,
@@ -23,11 +21,11 @@
   h4,
   h5,
   h6 {
-    @apply text-white font-primary;
+    @apply text-gray-200 font-primary;
   }
 
   p {
-    @apply text-white;
+    @apply text-gray-200;
   }
 
   a {
@@ -35,7 +33,7 @@
   }
 
   .section {
-    @apply w-[90vw]  h-screen px-4 lg:p-10 py-8 snap-center overflow-hidden;
+    @apply w-[90vw] h-auto px-4 lg:p-10 py-8 snap-center overflow-hidden  border-2 border-lime-500;
   }
 
   .section-title {
@@ -45,9 +43,9 @@
   .subtitle {
     @apply text-base  mb-16 lg:mb-24 max-w-[520px];
   }
-  /* .btn {
-    @apply py-4 px-7 font-medium bg-blue-900 text-white flex items-center justify-center rounded-sm  transition-all;
-  } */
+  .btn {
+    @apply py-3 px-5 bg-yellow text-secondary text-lg lg:text-xl font-bold flex items-center justify-center rounded-lg transition-all;
+  }
 
   .input {
     @apply h-[60px] outline-none pl-6 w-full font-body text-[15px] rounded-sm focus:outline focus:outline-1;
@@ -60,4 +58,16 @@
   .icons {
     @apply text-xl md:text-2xl xl:text-3xl;
   }
+
+  .footerCol {
+    @apply w-full sm:h-[10rem] md:h-[14rem] sm:basis-1/2  md:basis-1/4 flex flex-col justify-start items-center p-2;
+  }
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }

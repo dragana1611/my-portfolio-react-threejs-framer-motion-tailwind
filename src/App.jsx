@@ -1,9 +1,9 @@
 import Sidenav from "./components/Sidenav";
-import Main from "./components/Main";
-import Services from "./components/Services.jsx";
-import Projects from "./components/Projects";
-import Parallax from "./components/Parallax";
-import Contact from "./components/Contact";
+import Main from "./sections/Main";
+import About from "./sections/About";
+import Services from "./sections/Services.jsx";
+import Projects from "./sections/Projects";
+import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
 
 function App() {
@@ -14,17 +14,15 @@ function App() {
   // };
 
   return (
-    <div className=''>      
+    <>
       <Sidenav />
       <Main />
-      <Parallax />
-      <Services />
-      <Parallax />
-      <Projects />
-      <Parallax />
+      <About />      
+      <Services />      
+      <Projects />      
       <Contact />
       <Footer />
-    </div>
+    </>
   );
 }
 

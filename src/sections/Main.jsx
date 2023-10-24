@@ -1,10 +1,10 @@
 // import React from 'react'
-import Header from "./Header";
+import Header from "../components/Header";
 import { motion } from "framer-motion";
-import profileImg from "../assets/images/profile_pic.jpg";
+import profileImg from "../assets/images/portrait.jpg";
 import { TypeAnimation } from "react-type-animation";
-import SpinningBtn from "./SpinningBtn";
-import SocialIcons from "./SocialIcons";
+import SpinningBtn from "../components/SpinningBtn";
+import SocialIcons from "../components/SocialIcons";
 
 const Main = () => {
   return (
