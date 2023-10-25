@@ -1,8 +1,5 @@
-# React + Vite
+#my-portfolio-react-threejs-framer-motion-tailwind 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](https://github.com/dragana1611/my-portfolio-react-threejs-framer-motion-tailwind/assets/77893122/a9ff4069-4a6d-41f8-b934-a9ea5938064a)
