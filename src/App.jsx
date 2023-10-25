@@ -7,12 +7,6 @@ import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
 
 function App() {
-  // const [lightMode, setLightMode] = useState(false);
-
-  // const toggleLightMode = () => {
-  //   setLightMode(!lightMode);
-  // };
-
   return (
     <>
       <Sidenav />

@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
-import githubImg from "../assets/images/github.svg";
+import githubImg from "../assets/images/githubw.png";
 
 const ExploreCard = ({
   id,
@@ -18,7 +18,7 @@ const ExploreCard = ({
     variants={fadeIn("right", "spring", index * 0.5, 0.75)}
     className={`relative ${
       active === id ? "lg:flex-[3.5] flex-[10]" : "lg:flex-[0.5] flex-[2]"
-    } flex items-center justify-center min-w-[170px] lg:h-[80vh] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`}
+    } flex items-center justify-center min-w-[170px] lg:h-[80vh] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer mix-blend-screen`}
     onClick={() => handleClick(id)}
   >
     <img
@@ -27,7 +27,7 @@ const ExploreCard = ({
       className='absolute w-full h-full object-cover rounded-[24px]'
     />
     {active !== id ? (
-      <h3 className='font-semibold sm:text-[26px] text-[18px] text-yellow absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0] drop-shadow-[1px_1px_0_rgba(0,0,0,1)]'>
+      <h3 className='font-semibold sm:text-[26px] text-[18px] text-primary leading-8 absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0] drop-shadow-[1px_1px_0_rgba(0,0,0,1)]'>
         {title}
       </h3>
     ) : (
@@ -42,7 +42,7 @@ const ExploreCard = ({
             <img
               src={githubImg}
               alt='github'
-              className='w-2/3 h-2/3 object-contain'
+              className='w-1/2 h-1/2 object-contain'
             />
           </a>
           <div
@@ -52,16 +52,16 @@ const ExploreCard = ({
               href={url}
               target='_blank'
               rel='noreferrer'
-              className='inline-block text-yellow text-bold'
+              className='inline-block text-primary text-bold'
             >
               Live
             </a>
           </div>
         </div>
-        <p className='font-normal text-[16px] leading-[20.16px] text-yellow uppercase'>
+        <p className='font-normal text-[16px] leading-[20.16px] text-primary uppercase'>
           {tools}
         </p>
-        <h2 className='mt-[24px] font-semibold sm:text-[32px] text-[24px] text-yellow drop-shadow-[1px_1px_0_rgba(0,0,0,1)]'>
+        <h2 className='mt-[24px] font-semibold sm:text-[32px] text-[24px] text-primary drop-shadow-[1px_1px_0_rgba(0,0,0,1)]'>
           {title}
         </h2>
       </div>

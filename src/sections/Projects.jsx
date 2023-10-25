@@ -13,6 +13,11 @@ const Projects = () => {
   console.log(project);
   return (
     <section name='work' id='projects' className='section'>
+      <div className="w-full mb-10">
+        <p className='text-2xl lg:text-4xl font-bold border-b-4 border-yellow p-2 inline'>
+          Projects
+        </p>
+      </div>
       <motion.div
         variants={staggerContainer}
         initial='hidden'
@@ -39,8 +44,13 @@ const Projects = () => {
         viewport={{ once: false, amount: 0.25 }}
         className={`mx-auto flex flex-col`}
       >
-        <a href="https://github.com/dragana1611" target="_blank" rel="noreferrer"  className="mt-5 flex justify-center items-center ">
-          <Buttons  name={'View More'} />
+        <a
+          href='https://github.com/dragana1611'
+          target='_blank'
+          rel='noreferrer'
+          className='mt-5 flex justify-center items-center '
+        >
+          <Buttons type={"button"} name={"View More"} />
         </a>
       </motion.div>
     </section>

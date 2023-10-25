@@ -1,21 +1,23 @@
 import bootstrap from "../assets/images/bootstrap-logo.png";
-import clang from "../assets/images/c.png";
+import csharp from "../assets/images/c-sharp.png";
 import canva from "../assets/images/canva.png";
 import cpp from "../assets/images/cpp.png";
 import css3 from "../assets/images/css-3.png";
-import expressjs from "../assets/images/expressjs.png";
 import figma from "../assets/images/figma.png";
 import html5 from "../assets/images/html-5.png";
 import javascript from "../assets/images/js.png";
 import mongodb from "../assets/images/mongodb.png";
-import nodejs from "../assets/images/node-js.png";
+import firebase from "../assets/images/firebase.svg";
+import graphql from "../assets/images/graphql.png";
 import photoshop from "../assets/images/photoshop.png";
-import python from "../assets/images/python.png";
 import reactjs from "../assets/images/reactjs.png";
 import sass from "../assets/images/sass.png";
 import redux from "../assets/images/redux.png";
 import tailwind from "../assets/images/tailwind.png";
-import next from "../assets/images/next.svg";
+import next from "../assets/images/nextjs.svg";
+import wordpress from "../assets/images/wordpress.png";
+import webflow from "../assets/images/webflow.svg";
+import github from "../assets/images/githubblue.png";
 import project1 from "../assets/images/project1.jpg";
 import project2 from "../assets/images/project2.jpg";
 import project3 from "../assets/images/project3.jpg";
@@ -24,94 +26,144 @@ import project5 from "../assets/images/project5.jpg";
 
 export const techStack = [
   {
-    name: "HTML5",
-    icon: html5,
-    desc: "Web Design",
+    id: 1,
+    src: html5,
+    title: "HTML",
+    style: "shadow-rose-500",
+    // desc: "Web Design",
   },
   {
-    name: "CSS3",
-    icon: css3,
-    desc: "Web Design",
+    id: 2,
+    src: css3,
+    title: "CSS3",
+    style: "shadow-blue",
+    // desc: "Web Design",
   },
   {
-    name: "Javascript",
-    icon: javascript,
-    desc: "Programming",
+    id: 3,
+    src: javascript,
+    title: "JavaScript",
+    style: "shadow-yellow",
+    // desc: "Programming",
   },
   {
-    name: "React",
-    icon: reactjs,
-    desc: "Frontend",
+    id: 4,
+    src: reactjs,
+    title: "ReactJS",
+    style: "shadow-sky-400",
+    // desc: "JavaScript Library",
   },
   {
-    name: "NextJS",
-    icon: next,
-    desc: "Web Development",
+    id: 5,
+    src: tailwind,
+    title: "Tailwind CSS",
+    style: "shadow-sky-400",
+    // desc: "CSS Framework",
   },
   {
-    name: "NodeJS",
-    icon: nodejs,
-    desc: "Backend",
+    id: 6,
+    src: sass,
+    title: "Sass",
+    style: "shadow-pink-400",
+    desc: "CSS Extension Language",
   },
   {
-    name: "ExpressJS",
-    icon: expressjs,
-    desc: "Backend",
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-    desc: "Database",
-  },
-  {
-    name: "Redux",
-    icon: redux,
-    desc: "State Management",
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-    desc: "CSS Framework",
-  },
-  {
-    name: "Bootstrap",
-    icon: bootstrap,
+    id: 7,
+    src: bootstrap,
+    title: "Bootstrap",
+    style: "shadow-purple-700",
     desc: "CSS Library",
   },
   {
-    name: "C",
-    icon: clang,
-    desc: "Programming",
+    id: 8,
+    src: figma,
+    title: "Figma",
+    style: "shadow-rose-500",
+    // desc: "UI Design",
   },
   {
-    name: "C++",
-    icon: cpp,
-    desc: "Programming",
+    id: 9,
+    src: next,
+    title: "NextJS",
+    style: "shadow-white",
+    // desc: "Web Development",
   },
   {
-    name: "Python",
-    icon: python,
-    desc: "Programming",
+    id: 10,
+    src: redux,
+    title: "Redux",
+    style: "shadow-purple-700",
+    // desc: "Web Development",
   },
   {
-    name: "Photoshop",
-    icon: photoshop,
-    desc: "Graphic Design",
+    id: 11,
+    src: graphql,
+    title: "GraphQL",
+    style: "shadow-pink-400",
+    // desc: "Web Development",
   },
   {
-    name: "Canva",
-    icon: canva,
-    desc: "Graphic Design",
+    id: 12,
+    src: firebase,
+    title: "Firebase",
+    style: "shadow-orange-500",
+    // desc: "No-SQL DB",
   },
   {
-    name: "Figma",
-    icon: figma,
-    desc: "UI Design",
+    id: 13,
+    src: mongodb,
+    title: "MongoDB",
+    style: "shadow-green-500",
+    // desc: "Backend Database",
   },
   {
-    name: "Sass",
-    icon: sass,
-    desc: "UI Design",
+    id: 14,
+    src: wordpress,
+    title: "WordPress",
+    style: "shadow-sky-400",
+    // desc: "UI Design",
+  },
+  {
+    id: 15,
+    src: webflow,
+    title: "Webflow",
+    style: "shadow-blue",
+    // desc: "UI Design",
+  },
+  {
+    id: 16,
+    src: canva,
+    title: "Canva",
+    style: "shadow-sky-400",
+    // desc: "Ui Design",
+  },
+  {
+    id: 17,
+    src: photoshop,
+    title: "PhotoShop",
+    style: "shadow-blue",
+    // desc: "Digital",
+  },
+  {
+    id: 18,
+    src: csharp,
+    title: "C#",
+    style: "shadow-pink-700",
+    // desc: "Programming",
+  },
+  {
+    id: 19,
+    src: cpp,
+    title: "C++",
+    style: "shadow-blue",
+    // desc: "Programming",
+  },
+  {
+    id: 20,
+    src: github,
+    title: "GitHub",
+    style: "shadow-gray-400",
+    // desc: "Code Hosting",
   },
 ];
 
@@ -128,9 +180,10 @@ export const exploreProjects = [
     id: "project-2",
     imgUrl: project2,
     url: "https://preview.webflow.com/preview/webflow-workshop-f2c7e2?utm_medium=preview_link&utm_source=designer&utm_content=webflow-workshop-f2c7e2&preview=8db2517bb54d5fd13bd073ee36f1cc7e&workflow=preview",
-    githubUrl: "https://preview.webflow.com/preview/webflow-workshop-f2c7e2?utm_medium=preview_link&utm_source=designer&utm_content=webflow-workshop-f2c7e2&preview=8db2517bb54d5fd13bd073ee36f1cc7e&workflow=preview",
-    title: "Webflow UX/UI",
-    tools: "Webflow",
+    githubUrl:
+      "https://preview.webflow.com/preview/webflow-workshop-f2c7e2?utm_medium=preview_link&utm_source=designer&utm_content=webflow-workshop-f2c7e2&preview=8db2517bb54d5fd13bd073ee36f1cc7e&workflow=preview",
+    title: "Webflow",
+    tools: "Webflow UX/UI",
   },
   {
     id: "project-3",

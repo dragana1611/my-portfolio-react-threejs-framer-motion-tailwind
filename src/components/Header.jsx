@@ -1,5 +1,5 @@
 import logo from "../assets/images/dplogo_circle.png";
-import ThemeToggleButton from "./ThemeToggleButton";
+// import ThemeToggleButton from "./ThemeToggleButton";
 
 const Header = () => {
   return (
@@ -7,7 +7,7 @@ const Header = () => {
       <div className='h-full'>
         <img className='w-full h-full object-cover' src={logo} alt='' />
       </div>
-      <ThemeToggleButton />
+      {/* <ThemeToggleButton /> */}
     </header>
   );
 };

@@ -9,8 +9,8 @@ import {
 
 const Sidenav = () => {
   return (
-    <nav className='w-[90vw] xl:w-14 flex xl:flex-col items-center xl:justify-center fixed h-max xl:h-screen bottom-0 mt-auto xl:right-[2%] top-0 p-2 z-[100]'>
-      <div className='w-full xl:w-16 flex xl:flex-col items-center justify-between xl:justify-center gap-y-10 md:px-28 xl:px-0 h-10  xl:h-max py-8 bg-white/10 backdrop-blur-sm px-10 rounded-full'>
+    <nav className='w-[90vw] md:w-12 lg:w-14 flex md:flex-col items-center md:justify-center fixed h-max md:h-screen bottom-0 right-[3%] mt-auto md:right-[2%] top-0 p-2 z-[100] '>
+      <div className='w-full md:w-16 flex md:flex-col items-center justify-between md:justify-center gap-y-10 md:px-0 h-10 md:h-max py-8 bg-white/10 backdrop-blur-sm px-10 rounded-full'>
         <a href='#main' className='icons'>
           <HiHome />
         </a>

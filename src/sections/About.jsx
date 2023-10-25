@@ -6,7 +6,12 @@ import aboutImg from "../assets/images/artificial-intelligence.jpg";
 const About = () => {
   return (
     <section id='about' className='section'>
-      <div className='w-full lg:h-screen flex flex-col lg:flex-row justify-around items-center gap-14 '>
+      <div>
+        <p className='text-2xl lg:text-4xl font-bold border-b-4 border-yellow p-2 inline'>
+          About
+        </p>
+      </div>
+      <div className='w-full lg:h-screen flex flex-col lg:flex-row justify-around items-center gap-14 py-10 md:py-16 mx-auto px-2 md:px-4'>
         <div className='md:w-[80%] lg:basis-2/5  flex flex-col justify-center'>
           <motion.div
             initial='hidden'
