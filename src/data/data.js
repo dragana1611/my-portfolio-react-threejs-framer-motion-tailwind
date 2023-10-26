@@ -23,6 +23,7 @@ import project2 from "../assets/images/project2.jpg";
 import project3 from "../assets/images/project3.jpg";
 import project4 from "../assets/images/project4.jpg";
 import project5 from "../assets/images/project5.jpg";
+import checkIcon from "../assets/images/check.png";
 
 export const techStack = [
   {
@@ -208,5 +209,29 @@ export const exploreProjects = [
     githubUrl: "https://github.com/dragana1611/Mapping-Earthquake",
     title: "Mapping Earthquake",
     tools: "Javascript | RestAPI",
+  },
+];
+
+export const insights = [
+  {
+    imgUrl: checkIcon,
+    text: "I am able to handle multiple tasks on a daily basis.",
+  },
+  {
+    imgUrl: checkIcon,
+    text: "I meet deadlines and can work under pressure.",
+  },
+  {
+    imgUrl: checkIcon,
+    text: "My working hours are customizable.",
+  },
+
+  {
+    imgUrl: checkIcon,
+    text: "I am always energetic and eager to learn and make progress.",
+  },
+  {
+    imgUrl: checkIcon,
+    text: "I am a goal-driven, super motivated and hard-working person.",
   },
 ];
