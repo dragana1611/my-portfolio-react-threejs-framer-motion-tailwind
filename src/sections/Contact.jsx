@@ -11,7 +11,7 @@ const Contact = () => {
         <p className='text-2xl lg:text-4xl font-bold border-b-4 border-yellow p-2 inline'>
           Contact
         </p>
-        <p className='mt-10'>I have everything you need</p>
+        <p className='mt-10'>I have got just what you need</p>
       </div>
       <motion.div
         variants={staggerContainer}
