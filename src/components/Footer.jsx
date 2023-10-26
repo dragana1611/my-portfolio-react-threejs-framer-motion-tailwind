@@ -51,7 +51,6 @@ const Footer = () => {
       </div>
       <div className='w-full pt-10 pb-20 text-center'>
         <p>© 2023 - &nbsp; Made with ♥ &nbsp; | &nbsp; Have a nice {dayOfWeekName}</p>
-        <p>Dragana Petrovic</p>
       </div>
     </footer>
   );
