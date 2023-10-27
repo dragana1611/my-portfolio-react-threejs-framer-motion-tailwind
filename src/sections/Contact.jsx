@@ -3,8 +3,40 @@ import { fadeIn, staggerContainer } from "../utils/motion";
 import Buttons from "../components/Buttons";
 import InsightCard from "../components/InsightCard";
 import { insights } from "../data/data";
+import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => {
+    
+    const serviceId = "service_pinb11i";
+    const templateId = "template_eg05wml";
+    const publicKey = "iCDtBguqdkseD6nb_";
+
+    const templateParams = {
+      from_name: data.name,
+      from_email: data.email,
+      to_name: "Dragana",
+      subject: data.subject,
+      message: data.message,
+    };
+
+    emailjs
+      .send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log("Email sent successfully!", response);
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
+  };
+
   return (
     <section id='about' className='section relative'>
       <div>
@@ -18,11 +50,11 @@ const Contact = () => {
         initial='hidden'
         whileInView='show'
         viewport={{ once: false, amount: 0.25 }}
-        className='w-full lg:h-screen flex flex-col lg:flex-row justify-around items-center gap-6 py-10 md:py-16 mx-auto px-2 md:px-4'
+        className='w-full lg:h-screen flex flex-col lg:flex-row justify-around items-center gap-6 py-10 md:py-16 mx-auto px-2 md:px-4 border-2 border-blue'
       >
         <motion.div
           variants={fadeIn("right", "tween", 0.2, 1)}
-          className='w-full  lg:h-[610px] h-auto flex-1 flex justify-center flex-col sm:p-8 lg:p-24 p-4 rounded-[32px] relative border-[1px] border-[#6A6A6A]'
+          className='basis-1/2  lg:h-[610px] h-auto flex-1 flex justify-center flex-col sm:p-8 lg:p-24 p-4 rounded-[32px] relative border-[1px] border-[#6A6A6A]'
         >
           <div className='w-full'>
             <p>
@@ -54,34 +86,44 @@ const Contact = () => {
         </motion.div>
         <motion.div
           variants={fadeIn("left", "tween", 0.2, 1)}
-          className='relative w-full
-          flex-[0.5] lg:max-w-[400px]
-          flex
-          justify-center
-          items-center'
+          className='relative lg:h-[610px] h-auto basis-1/2 flex justify-center items-center border-2 border-purple-700'
         >
-          <form className='flex flex-col space-y-2 w-full mx-auto'>
-            <div className='flex space-x-2'>
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className='flex flex-col justify-between items-centar space-y-10 w-full h-full'
+          >
+            <div className='flex space-x-2 border-2 border-red'>
               <input
                 type='text'
-                className='contactInput bg-transparent border-[1px] border-[#6A6A6A]'
+                defaultValue=''
+                {...register("name", { required: true })}
+                className='contactInput basis-1/2'
                 placeholder='Name'
               />
+              {errors.name && <span>This field is required</span>}
               <input
-                type='text'
-                className='contactInput bg-transparent border-[1px] border-[#6A6A6A]'
+                type='email'
+                defaultValue=''
+                {...register("email", { required: true })}
+                className='contactInput basis-1/2 border-2 border-lime-400'
                 placeholder='Email'
               />
+              {errors.email && <span>This field is required</span>}
             </div>
             <input
               type='text'
-              className='contactInput bg-transparent border-[1px] border-[#6A6A6A]'
+              defaultValue=''
+              {...register("subject")}
+              className='contactInput'
               placeholder='Subject'
             />
             <textarea
-              className='contactInput bg-transparent border-[1px] border-[#6A6A6A]'
+              className='contactInput h-auto lg:h-[20rem]'
+              defaultValue=''
+              {...register("message", { required: true })}
               placeholder='Message'
-            ></textarea>
+            />
+            {errors.message && <span>This field is required</span>}
             <Buttons type={"submit"} name={"Submit"} />
           </form>
         </motion.div>

@@ -40,12 +40,8 @@
     @apply py-3 px-5 bg-yellow text-secondary text-lg lg:text-xl font-bold flex items-center justify-center rounded-lg transition-all;
   }
 
-  .input {
-    @apply h-[60px] outline-none pl-6 w-full font-body text-[15px] rounded-sm focus:outline focus:outline-1;
-  }
-
-  .textarea {
-    @apply resize-none w-full outline-none p-6 rounded-sm h-[200px] focus:outline focus:outline-1;
+  .contactInput{
+  @apply outline-none bg-transparent border-[1px] border-[#6A6A6A] rounded-sm px-6 py-4 placeholder:text-[#6A6A6A]
   }
 
   .icons {
