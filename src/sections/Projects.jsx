@@ -13,7 +13,7 @@ const Projects = () => {
   console.log(project);
   return (
     <section name='work' id='projects' className='section'>
-      <div className="w-full mb-10">
+      <div className='w-full mb-10'>
         <p className='text-2xl lg:text-4xl font-bold border-b-4 border-yellow p-2 inline'>
           Projects
         </p>

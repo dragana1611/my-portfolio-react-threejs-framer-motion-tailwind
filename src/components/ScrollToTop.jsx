@@ -5,17 +5,14 @@ const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
-    const heightToHidden = 600;
-    const winScroll =
-      document.body.scrollTop || document.documentElement.scrollTop;
-
-    if (winScroll > heightToHidden) {
+    if (window.pageYOffset > 400) {
       setIsVisible(true);
+    } else {
+      setIsVisible(false);
     }
   };
 
   const scrollToTop = () => {
-    console.log("click click scroll");
     window.scrollTo({
       top: 0,
       behavior: "smooth",
@@ -24,14 +21,13 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", toggleVisibility);
-
     return () => {
       window.removeEventListener("scroll", toggleVisibility);
     };
   }, []);
 
   return (
-    <div className='fixed bottom-10 right-[2%] flex justify-center items-center z-[1000]'>
+    <div className='fixed bottom-20 right-[2%] flex justify-center items-center z-[1000]'>
       {!isVisible && (
         <button className='opacity-0'>
           <HiChevronUp className='h-6 w-6 text-secondary' />
@@ -42,7 +38,7 @@ const ScrollToTop = () => {
           type='button'
           onClick={scrollToTop}
           className={
-            "opacity-100 inline-flex items-center p-3 rounded-full shadow-sm  bg-yellow transition-opacity hover:bg-yellow/50 cursor-pointer relative z-50"
+            "opacity-100 inline-flex items-center p-3 w-9 h-9 md:w-10 md:h-10 lg:w-12 lg:h-12 rounded-full shadow-sm  bg-yellow transition-opacity hover:bg-yellow/80 cursor-pointer"
           }
         >
           <HiChevronUp className='h-6 w-6 text-secondary' aria-hidden='true' />

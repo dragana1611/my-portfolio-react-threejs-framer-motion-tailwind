@@ -1,33 +1,30 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import ExploreCard from '../components/ExploreCard';
-import { staggerContainer } from '../utils/motion';
-import {exploreWorlds} from "../data/data"
-
-
+import { useState } from "react";
+import { motion } from "framer-motion";
+import ExploreCard from "../components/ExploreCard";
+import { staggerContainer } from "../utils/motion";
+import { exploreWorlds } from "../data/data";
 
 const Explore = () => {
-  const [active, setActive] = useState('world-2');
+  const [active, setActive] = useState("world-2");
 
   return (
-    <div className={`${styles.paddings}`} id="explore">
+    <div className={`${styles.paddings}`} id='explore'>
       <motion.div
         variants={staggerContainer}
-        initial="hidden"
-        whileInView="show"
+        initial='hidden'
+        whileInView='show'
         viewport={{ once: false, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
         <h2
-          title={(
+          title={
             <>
-              Choose the world you want <br className="md:block hidden" /> to
+              Choose the world you want <br className='md:block hidden' /> to
               explore
             </>
-          )}
-          
+          }
         />
-        <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
+        <div className='mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5'>
           {exploreWorlds.map((world, index) => (
             <ExploreCard
               key={world.id}

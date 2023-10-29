@@ -5,16 +5,16 @@ import Services from "./sections/Services.jsx";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
-import  ScrollToTop  from "./components/ScrollToTop";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
       <Sidenav />
       <Main />
-      <About />      
-      <Services />      
-      <Projects />      
+      <About />
+      <Services />
+      <Projects />
       <Contact />
       <Footer />
       <ScrollToTop />

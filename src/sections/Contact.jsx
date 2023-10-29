@@ -14,7 +14,6 @@ const Contact = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    
     const serviceId = "service_pinb11i";
     const templateId = "template_eg05wml";
     const publicKey = "iCDtBguqdkseD6nb_";
@@ -50,7 +49,7 @@ const Contact = () => {
         initial='hidden'
         whileInView='show'
         viewport={{ once: false, amount: 0.25 }}
-        className='w-full lg:h-screen flex flex-col lg:flex-row justify-around items-center gap-6 py-10 md:py-16 mx-auto px-2 md:px-4 border-2 border-blue'
+        className='w-full lg:h-screen flex flex-col lg:flex-row justify-around items-center gap-6 py-10 md:py-16 mx-auto px-2 md:px-4'
       >
         <motion.div
           variants={fadeIn("right", "tween", 0.2, 1)}
@@ -86,13 +85,13 @@ const Contact = () => {
         </motion.div>
         <motion.div
           variants={fadeIn("left", "tween", 0.2, 1)}
-          className='relative lg:h-[610px] h-auto basis-1/2 flex justify-center items-center border-2 border-purple-700'
+          className='relative lg:h-[610px] h-auto basis-1/2 flex justify-center items-center'
         >
           <form
             onSubmit={handleSubmit(onSubmit)}
             className='flex flex-col justify-between items-centar space-y-10 w-full h-full'
           >
-            <div className='flex space-x-2 border-2 border-red'>
+            <div className='flex space-x-2'>
               <input
                 type='text'
                 defaultValue=''
@@ -105,7 +104,7 @@ const Contact = () => {
                 type='email'
                 defaultValue=''
                 {...register("email", { required: true })}
-                className='contactInput basis-1/2 border-2 border-lime-400'
+                className='contactInput basis-1/2'
                 placeholder='Email'
               />
               {errors.email && <span>This field is required</span>}

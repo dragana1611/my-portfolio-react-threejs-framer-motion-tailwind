@@ -1,10 +1,12 @@
 /* eslint-disable react/prop-types */
-const Buttons = ({type, name}) => {
+const Buttons = ({ type, name }) => {
   return (
     <div>
-      <button type={type} className="btn">{name}</button>
+      <button type={type} className='btn'>
+        {name}
+      </button>
     </div>
-  )
-}
+  );
+};
 
-export default Buttons
+export default Buttons;

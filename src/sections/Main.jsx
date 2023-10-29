@@ -12,7 +12,7 @@ const Main = () => {
       <Header />
       {/* HERO SECTION */}
       <div className='w-full lg:h-screen flex flex-col lg:flex-row justify-around items-center gap-14 '>
-        <div className="md:w-[80%] lg:basis-2/5  flex flex-col justify-center md:order-2">
+        <div className='md:w-[80%] lg:basis-2/5  flex flex-col justify-center md:order-2'>
           <div className='md:w-[80%] lg:basis-2/5 z-10 mt-5 md:mt-14 flex justify-center scale-[0.7] lg:scale-[1]'>
             <div
               className='relative z-0 ml-20 rounded-t-[400px] before:absolute before:-top-10 before:-left-10 before:rounded-t-[400px]
@@ -24,8 +24,7 @@ const Main = () => {
                 src={profileImg}
               />
             </div>
-            
-          </div>          
+          </div>
         </div>
 
         {/* MAIN TEXT */}
@@ -81,7 +80,7 @@ const Main = () => {
                     fontSize: "1em",
                     display: "inline-block",
                     paddingLeft: "10px",
-                    color:'#FDCC49'
+                    color: "#FDCC49",
                   }}
                 />
               </h2>
@@ -100,12 +99,12 @@ const Main = () => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <div className="w-full flex justify-between">
-              <div className="lg:basis-1/2 flex flex-col justify-center items-center lg:items-start gap-7 p-5">
-                <p className="w-auto lg:text-xl text-yellow">Get in Touch</p>
+            <div className='w-full flex justify-between'>
+              <div className='lg:basis-1/2 flex flex-col justify-center items-center lg:items-start gap-7 p-5'>
+                <p className='w-auto lg:text-xl text-yellow'>Get in Touch</p>
                 <SocialIcons />
               </div>
-              <div className="lg:basis-1/2">
+              <div className='lg:basis-1/2'>
                 <SpinningBtn />
               </div>
             </div>

@@ -14,9 +14,7 @@ const InsightCard = ({ imgUrl, text, index }) => (
     />
     <div className='w-full flex justify-between items-center'>
       <div className='flex-1 md:ml-[62px] flex flex-col w-full'>
-        <h4 className='font-normal lg:text-lg text-base'>
-          {text}
-        </h4>
+        <h4 className='font-normal lg:text-lg text-base'>{text}</h4>
       </div>
     </div>
   </motion.div>

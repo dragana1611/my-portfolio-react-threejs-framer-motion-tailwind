@@ -11,11 +11,7 @@ const SocialIcons = () => {
         rel='noreferrer'
         className='block h-full'
       >
-        <img
-          src={linkedinIcon}
-          alt=''
-          className='h-full'
-        />
+        <img src={linkedinIcon} alt='' className='h-full' />
       </a>
       <a
         href='https://github.com/dragana1611'
@@ -25,10 +21,7 @@ const SocialIcons = () => {
       >
         <img src={githubIcon} alt='' className='h-full object-fill' />
       </a>
-      <a
-        href='#contact'
-        className='block h-full'
-      >
+      <a href='#contact' className='block h-full'>
         <img src={emailIcon} alt='' className='h-full' />
       </a>
     </div>

@@ -7,8 +7,7 @@ const Services = () => {
       <div className='w-full py-8 md:py-10 mx-auto px-2 md:px-4 flex flex-col justify-center'>
         <div>
           <p className='text-2xl lg:text-4xl font-bold border-b-4 border-yellow p-2 inline'>
-            Skills 
-
+            Skills
           </p>
           <p className='py-6'>Languages | Databases | Frameworks</p>
         </div>
