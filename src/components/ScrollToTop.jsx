@@ -27,7 +27,7 @@ const ScrollToTop = () => {
   }, []);
 
   return (
-    <div className='fixed bottom-20 right-[2%] flex justify-center items-center z-[1000]'>
+    <div className='fixed bottom-20 md:bottom-10 right-[2%] flex justify-center items-center z-[1000]'>
       {!isVisible && (
         <button className='opacity-0'>
           <HiChevronUp className='h-6 w-6 text-secondary' />
