@@ -1,7 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
 // import React from 'react'
 import Header from "../components/Header";
 import { motion } from "framer-motion";
-import profileImg from "../assets/images/portrait.jpg";
+import { fadeIn, staggerContainer } from "../utils/motion";
+import profileImg from "../assets/images/portrait.png";
 import { TypeAnimation } from "react-type-animation";
 import SpinningBtn from "../components/SpinningBtn";
 import SocialIcons from "../components/SocialIcons";
@@ -11,8 +13,17 @@ const Main = () => {
     <section id='main' className='section flex flex-col gap-y-6 h-screen'>
       <Header />
       {/* HERO SECTION */}
-      <div className='w-full lg:h-screen flex flex-col lg:flex-row justify-around items-center gap-14 '>
-        <div className='md:w-[80%] lg:basis-2/5  flex flex-col justify-center md:order-2'>
+      <motion.div
+        variants={staggerContainer}
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: false, amount: 0.25 }}
+        className='w-full lg:h-screen flex flex-col lg:flex-row justify-around items-center gap-14 '
+      >
+        <motion.div
+          variants={fadeIn("left", "tween", 0.2, 1)}
+          className='md:w-[80%] lg:basis-2/5  flex flex-col justify-center md:order-2 relative'
+        >
           <div className='md:w-[80%] lg:basis-2/5 z-10 mt-5 md:mt-14 flex justify-center scale-[0.7] lg:scale-[1]'>
             <div
               className='relative z-0 ml-20 rounded-t-[400px] before:absolute before:-top-10 before:-left-10 before:rounded-t-[400px]
@@ -25,21 +36,15 @@ const Main = () => {
               />
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* MAIN TEXT */}
-        <div className='z-30 lg:basis-3/5 xl:mt-3'>
+        <motion.div
+          variants={fadeIn("right", "tween", 0.2, 1)}
+          className='z-30 lg:basis-3/5 xl:mt-3 relative'
+        >
           {/* HEADINGS */}
-          <motion.div
-            initial='hidden'
-            whileInView='visible'
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
-            variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
-            }}
-          >
+          <div>
             <p className='text-2xl md:text-4xl xl:text-6xl font-semibold z-10 text-center md:text-start mb-5'>
               Dragana &nbsp;
               <span
@@ -49,18 +54,9 @@ const Main = () => {
                 Petrovic
               </span>
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial='hidden'
-            whileInView='visible'
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
-            variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
-            }}
-          >
+          <div>
             <div className='flex text-center md:text-start  text-xl lg:text-3xl xl:text-4xl font-bold pt-4 mb-5 md:mb-20'>
               <h2 className='w-full'>
                 I'm a
@@ -85,20 +81,10 @@ const Main = () => {
                 />
               </h2>
             </div>
-          </motion.div>
+          </div>
 
           {/* CALL TO ACTIONS */}
-          <motion.div
-            className='flex mt-5 justify-center md:justify-start'
-            initial='hidden'
-            whileInView='visible'
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
-            variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
-            }}
-          >
+          <div className='flex mt-5 justify-center md:justify-start'>
             <div className='w-full flex justify-between'>
               <div className='lg:basis-1/2 flex flex-col justify-center items-center lg:items-start gap-7 p-5'>
                 <p className='w-auto lg:text-xl text-yellow'>Get in Touch</p>
@@ -108,9 +94,9 @@ const Main = () => {
                 <SpinningBtn />
               </div>
             </div>
-          </motion.div>
-        </div>
-      </div>
+          </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };
