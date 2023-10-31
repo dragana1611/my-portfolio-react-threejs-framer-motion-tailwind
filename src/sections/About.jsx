@@ -7,7 +7,7 @@ import aboutImg from "../assets/images/artificial-intelligence.jpg";
 const About = () => {
   return (
     <section id='about' className='section'>
-      <div>
+      <div className=''>
         <p className='text-2xl lg:text-4xl font-bold border-b-4 border-yellow p-2 inline'>
           About
         </p>
@@ -17,7 +17,7 @@ const About = () => {
         initial='hidden'
         whileInView='show'
         viewport={{ once: false, amount: 0.25 }}
-        className='w-full lg:h-screen flex flex-col lg:flex-row justify-around items-center gap-6 py-10 md:py-16 mx-auto px-2 md:px-4'
+        className='w-full lg:h-screen flex flex-col lg:flex-row justify-around items-center gap-6 py-10 md:py-16 mx-auto mt-14 xl:mt-20 px-2 md:px-4'
       >
         <motion.div
           variants={fadeIn("right", "tween", 0.2, 1)}
@@ -36,9 +36,9 @@ const About = () => {
 
         <motion.div
           variants={fadeIn("left", "tween", 0.2, 1)}
-          className='w-full  lg:h-[610px] h-auto flex-1 flex justify-center flex-col sm:p-8 lg:p-24 p-4 rounded-[32px] relative border-[1px] border-[#6A6A6A]'
+          className='w-full  lg:h-[610px] h-auto flex-1 flex justify-start flex-col sm:p-8 xl:p-12 p-4 rounded-[32px] relative border-[1px] border-[#6A6A6A]'
         >
-          <p className='text-base  xl:text-xl z-10 text-justify mb-5 leading-8 md:leading-[36px] xl:leading-[46px] tracking-wide'>
+          <p className='text-base  xl:text-xl z-10 text-justify mb-5 leading-8 md:leading-[36px] xl:leading-[40px] tracking-wide'>
             Innovative frontend developer with expertise in HTML, CSS,
             Javascript, React, Tailwind CSS, and many other modern libraries and
             frameworks. I design and maintain websites that offer a smooth user

@@ -33,7 +33,7 @@
   }
 
   .section {
-    @apply w-[90vw] mx-auto px-4 lg:p-10 py-8 snap-center overflow-hidden;
+    @apply w-[90vw] mx-auto mb-10 px-4 lg:p-14 py-8 snap-center overflow-hidden;
   }
 
   .btn {

@@ -49,30 +49,27 @@ const Contact = () => {
         initial='hidden'
         whileInView='show'
         viewport={{ once: false, amount: 0.25 }}
-        className='w-full lg:h-screen flex flex-col lg:flex-row justify-around items-center gap-6 py-10 md:py-16 mx-auto px-2 md:px-4'
+        className='w-full h-full lg:h-screen flex flex-col lg:flex-row justify-between items-center gap-6 py-10 md:py-16 mx-auto mt-14 px-2 md:px-4'
       >
         <motion.div
           variants={fadeIn("right", "tween", 0.2, 1)}
-          className='basis-1/2  lg:h-[610px] h-auto flex-1 flex justify-center flex-col sm:p-8 lg:p-24 p-4 rounded-[32px] relative border-[1px] border-[#6A6A6A]'
+          className='w-full h-full flex flex-col justify-start p-4 rounded-[32px] relative border-[1px] border-[#6A6A6A]'
         >
-          <div className='w-full'>
-            <p>
-              You are looking for a quality developer who is efficient,
-              meticulous and skillful? You want a broadly communicative
-              co-worker who fits the team on professional, drive dynamics and
-              human level? The one who is reliable, dedicated, alert,
-              concentrated and easy to collaborate with? I will be glad to work
-              with you!
-            </p>
-          </div>
+          <p className='w-full mb-10 xl:mb-14 lg:leading-8 text-justify lg:text-lg text-base p-5'>
+            You are looking for a quality developer who is efficient, meticulous
+            and skillful? You want a broadly communicative co-worker who fits
+            the team on professional, drive dynamics and human level? The one
+            who is reliable, dedicated, alert, concentrated and easy to
+            collaborate with? I will be glad to work with you!
+          </p>
           <motion.div
             variants={staggerContainer}
             initial='hidden'
             whileInView='show'
             viewport={{ once: false, amount: 0.25 }}
-            className={`mx-auto flex flex-col`}
+            className={"w-full last:mx-auto flex flex-col justify-between"}
           >
-            <div className='mt-[50px] flex flex-col gap-[30px]'>
+            <div className='flex flex-col gap-5 lg:gap-[30px]'>
               {insights.map((item, index) => (
                 <InsightCard
                   key={`insight-${index}`}
@@ -85,18 +82,18 @@ const Contact = () => {
         </motion.div>
         <motion.div
           variants={fadeIn("left", "tween", 0.2, 1)}
-          className='relative lg:h-[610px] h-auto basis-1/2 flex justify-center items-center'
+          className='relative w-full h-full flex flex-col justify-center'
         >
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className='flex flex-col justify-between items-centar space-y-10 w-full h-full'
+            className='w-full h-full lg:h-screen flex flex-col justify-between items-centar gap-2 mt-10 lg:mt-0'
           >
-            <div className='flex space-x-2'>
+            <div className='w-full flex flex-col md:flex-row justify-between gap-3'>
               <input
                 type='text'
                 defaultValue=''
                 {...register("name", { required: true })}
-                className='contactInput basis-1/2'
+                className='contactInput w-full md:basis-1/2'
                 placeholder='Name'
               />
               {errors.name && <span>This field is required</span>}
@@ -104,7 +101,7 @@ const Contact = () => {
                 type='email'
                 defaultValue=''
                 {...register("email", { required: true })}
-                className='contactInput basis-1/2'
+                className='contactInput w-full md:basis-1/2'
                 placeholder='Email'
               />
               {errors.email && <span>This field is required</span>}
