@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion";
 import Buttons from "../components/Buttons";
@@ -13,7 +15,10 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
+  const form = useRef();
+  const [loading, setLoading] = useState(false);
+
+  const onSubmit = async (data) => {
     const serviceId = "service_pinb11i";
     const templateId = "template_eg05wml";
     const publicKey = "iCDtBguqdkseD6nb_";
@@ -25,19 +30,21 @@ const Contact = () => {
       subject: data.subject,
       message: data.message,
     };
+    try {
+      setLoading(true);
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      form.current.reset();
 
-    emailjs
-      .send(serviceId, templateId, templateParams, publicKey)
-      .then((response) => {
-        console.log("Email sent successfully!", response);
-      })
-      .catch((error) => {
-        console.error("Error sending email:", error);
-      });
+      // alert("email successfully sent check inbox");
+    } catch (error) {
+      console.error("Error sending email:", error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
-    <section id='about' className='section relative'>
+    <section id='contact' className='section relative'>
       <div>
         <p className='text-2xl lg:text-4xl font-bold border-b-4 border-yellow p-2 inline'>
           Contact
@@ -55,7 +62,7 @@ const Contact = () => {
           variants={fadeIn("right", "tween", 0.2, 1)}
           className='w-full h-full flex flex-col justify-start p-4 rounded-[32px] relative border-[1px] border-[#6A6A6A]'
         >
-          <p className='w-full mb-10 xl:mb-14 lg:leading-8 text-justify lg:text-lg text-base p-5'>
+          <p className='w-full mb-10 lg:leading-8 text-justify lg:text-lg text-base p-5'>
             You are looking for a quality developer who is efficient, meticulous
             and skillful? You want a broadly communicative co-worker who fits
             the team on professional, drive dynamics and human level? The one
@@ -69,7 +76,7 @@ const Contact = () => {
             viewport={{ once: false, amount: 0.25 }}
             className={"w-full last:mx-auto flex flex-col justify-between"}
           >
-            <div className='flex flex-col gap-5 lg:gap-[30px]'>
+            <div className='flex flex-col gap-5 lg:gap-[20px]'>
               {insights.map((item, index) => (
                 <InsightCard
                   key={`insight-${index}`}
@@ -85,6 +92,7 @@ const Contact = () => {
           className='relative w-full h-full flex flex-col justify-center'
         >
           <form
+            ref={form}
             onSubmit={handleSubmit(onSubmit)}
             className='w-full h-full lg:h-screen flex flex-col justify-between items-centar gap-2 mt-10 lg:mt-0'
           >
