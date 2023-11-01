@@ -4,7 +4,7 @@ import { HiPhone } from "react-icons/hi2";
 import { HiEnvelope } from "react-icons/hi2";
 
 const Footer = () => {
-  const dayOfWeekName = new Date().toLocaleString("default", {
+  const dayOfWeekName = new Date().toLocaleString("en-US", {
     weekday: "long",
   });
 

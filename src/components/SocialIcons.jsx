@@ -4,7 +4,7 @@ import emailIcon from "../assets/images/email.png";
 
 const SocialIcons = () => {
   return (
-    <div className='w-full h-5 xl:h-6 flex justify-center lg:justify-start gap-3'>
+    <div className='w-full h-5 xl:h-6 flex justify-center lg:justify-start gap-1 sm:gap-3'>
       <a
         href='https://www.linkedin.com/in/dragana-petrovic-b2059646/'
         target='_blank'

@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 const Buttons = ({ type, name }) => {
   return (
-    <div>
+    <div className="">
       <button type={type} className='btn'>
         {name}
       </button>

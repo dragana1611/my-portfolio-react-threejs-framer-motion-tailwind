@@ -58,7 +58,7 @@ const Main = () => {
 
           <div>
             <div className='flex text-center md:text-start  text-xl lg:text-3xl xl:text-4xl font-bold pt-4 mb-5 md:mb-20'>
-              <h2 className='w-full'>
+              <h1 className='w-full'>
                 I'm a
                 <TypeAnimation
                   sequence={[
@@ -79,7 +79,7 @@ const Main = () => {
                     color: "#FDCC49",
                   }}
                 />
-              </h2>
+              </h1>
             </div>
           </div>
 

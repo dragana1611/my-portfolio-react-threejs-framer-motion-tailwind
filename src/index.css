@@ -40,8 +40,8 @@
     @apply py-3 px-5 bg-yellow text-secondary text-lg lg:text-xl font-bold flex items-center justify-center rounded-lg transition-all;
   }
 
-  .contactInput{
-  @apply outline-none bg-transparent border-[1px] border-[#6A6A6A] rounded-sm px-6 py-4 placeholder:text-[#6A6A6A]
+  .contactInput {
+    @apply outline-none bg-transparent border-[1px] border-[#6A6A6A] rounded-sm px-6 py-4 placeholder:text-[#6A6A6A];
   }
 
   .icons {
