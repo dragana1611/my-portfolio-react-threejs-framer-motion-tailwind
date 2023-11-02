@@ -38,7 +38,7 @@
   }
 
   .btn {
-    @apply py-3 px-5 bg-yellow text-secondary text-lg lg:text-xl font-bold flex items-center justify-center rounded-lg transition-all;
+    @apply py-3 px-5 bg-yellow text-secondary text-lg lg:text-xl font-bold flex items-center justify-center rounded-lg hover:bg-amber-500 focus:scale-105 transition-all;
   }
 
   .contactInput {

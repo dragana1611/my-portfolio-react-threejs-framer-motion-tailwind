@@ -37,7 +37,9 @@ const ExploreCard = ({
             href={githubUrl}
             target='_blank'
             rel='noreferrer'
-            className={`w-[60px] h-[60px] rounded-[24px] glassmorphism flex justify-center items-center`}
+            className={
+              "w-[60px] h-[60px] rounded-[24px] glassmorphism flex justify-center items-center hover:bg-amber-500"
+            }
           >
             <img
               src={githubImg}

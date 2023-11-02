@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion";
 import { techStack } from "../data/data";

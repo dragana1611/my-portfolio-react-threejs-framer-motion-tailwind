@@ -35,7 +35,7 @@ const Contact = () => {
       await emailjs.send(serviceId, templateId, templateParams, publicKey);
       form.current.reset();
 
-      // alert("email successfully sent check inbox");
+      alert("✔️ email successfully sent check inbox");
     } catch (error) {
       console.error("Error sending email:", error);
     } finally {
@@ -102,7 +102,7 @@ const Contact = () => {
                 defaultValue=''
                 {...register("name", { required: true })}
                 className='contactInput w-full md:basis-1/2'
-                placeholder='Name'
+                placeholder='Name*'
               />
               {errors.name && <span>This field is required</span>}
               <input
@@ -110,7 +110,7 @@ const Contact = () => {
                 defaultValue=''
                 {...register("email", { required: true })}
                 className='contactInput w-full md:basis-1/2'
-                placeholder='Email'
+                placeholder='Email*'
               />
               {errors.email && <span>This field is required</span>}
             </div>
@@ -125,7 +125,7 @@ const Contact = () => {
               className='contactInput h-auto lg:h-[20rem]'
               defaultValue=''
               {...register("message", { required: true })}
-              placeholder='Message'
+              placeholder='Message*'
             />
             {errors.message && <span>This field is required</span>}
             <Buttons type={"submit"} name={"Submit"} />
