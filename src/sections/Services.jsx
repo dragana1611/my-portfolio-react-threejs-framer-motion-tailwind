@@ -5,7 +5,7 @@ import { techStack } from "../data/data";
 
 const Services = () => {
   return (
-    <section id='services' className='section '>
+    <section name='services' className='section '>
       <motion.div
         variants={staggerContainer}
         initial='hidden'
@@ -19,10 +19,11 @@ const Services = () => {
           </p>
           <p className='py-6'>Languages | Databases | Frameworks</p>
         </div>
-        
+
         <motion.div
-        variants={fadeIn("up", "tween", 0.2, 1)}
-        className='w-full bg-gradient-to-b from-gray-800 to-black grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-8 text-center mt-14 xl:mt-20 py-8 px-8 sm:px-10'>
+          variants={fadeIn("up", "tween", 0.2, 1)}
+          className='w-full bg-gradient-to-b from-gray-800 to-black grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-8 text-center mt-14 xl:mt-20 py-8 px-8 sm:px-10'
+        >
           {techStack.map(({ id, src, title, style }) => (
             <div
               key={id}

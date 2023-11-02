@@ -6,7 +6,7 @@ import aboutImg from "../assets/images/artificial-intelligence.jpg";
 
 const About = () => {
   return (
-    <section id='about' className='section'>
+    <section name='about' className='section'>
       <div className=''>
         <p className='text-2xl lg:text-4xl font-bold border-b-4 border-yellow p-2 inline'>
           About
@@ -44,7 +44,8 @@ const About = () => {
             frameworks. I design and maintain websites that offer a smooth user
             experience. My expertise lies in creating dynamic, engaging
             interfaces through writing clean code and utilizing new-age
-            development tools and techniques. I am a developer with a curious mind that is passionate about making an impact. I love building
+            development tools and techniques. I am a developer with a curious
+            mind that is passionate about making an impact. I love building
             solutions and solving problems and focused on both large picture and
             details with whatever technology I work in. As a programmer, I am
             driven by a desire to create and innovate. In the future, I hope to

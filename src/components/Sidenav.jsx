@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import {
   HiHome,
   HiUser,
@@ -11,21 +12,21 @@ const Sidenav = () => {
   return (
     <nav className='w-[90vw] md:w-12 lg:w-14 flex md:flex-col items-center md:justify-center fixed h-max md:h-screen bottom-0 right-[3%] mt-auto md:right-[2%] top-0 p-2 z-[100] '>
       <div className='w-full md:w-16 flex md:flex-col items-center justify-between md:justify-center gap-y-10 md:px-0 h-10 md:h-max py-8 bg-white/10 backdrop-blur-sm px-10 rounded-full'>
-        <a href='#main' className='icons'>
+        <Link to='main' smooth={true} duration={300} className='icons link'>
           <HiHome />
-        </a>
-        <a href='#about' className='icons'>
+        </Link>
+        <Link to='about' smooth={true} duration={300} className='icons link'>
           <HiUser />
-        </a>
-        <a href='#services' className='icons'>
+        </Link>
+        <Link to='services' smooth={true} duration={300} className='icons link'>
           <HiViewColumns />
-        </a>
-        <a href='#projects' className='icons'>
+        </Link>
+        <Link to='projects' smooth={true} duration={300} className='icons link'>
           <HiRectangleGroup />
-        </a>
-        <a href='#contact' className='icons'>
+        </Link>
+        <Link to='contact' smooth={true} duration={300} className='icons link'>
           <HiEnvelope />
-        </a>
+        </Link>
       </div>
     </nav>
   );

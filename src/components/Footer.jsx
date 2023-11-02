@@ -1,3 +1,4 @@
+import {Link} from "react-scroll"
 import SpinningBtn from "../components/SpinningBtn";
 import SocialIcons from "./SocialIcons";
 import { HiPhone } from "react-icons/hi2";
@@ -22,20 +23,19 @@ const Footer = () => {
           <h3 className='text-xl pb-3'>Quick Links</h3>
           <ul className='flex flex-col gap-1'>
             <li>
-              <a href=''>Home</a>
+              <Link className="link" to="main" smooth={true}  duration={300}>Home</Link>
             </li>
             <li>
-              <a href=''>About</a>
+              <Link className="link" to="about" smooth={true}  duration={300}>About</Link>
             </li>
             <li>
-              <a href=''>Services</a>
-            </li>
-            <li></li>
-            <li>
-              <a href=''>Projects</a>
+              <Link className="link" to="services" smooth={true}  duration={300}>Services</Link>
             </li>
             <li>
-              <a href=''>Contact</a>
+              <Link className="link" to="projects" smooth={true}  duration={300}>Projects</Link>
+            </li>
+            <li>
+              <Link className="link" to="contact" smooth={true}  duration={300}>Contact</Link>
             </li>
           </ul>
         </div>

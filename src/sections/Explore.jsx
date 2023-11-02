@@ -8,13 +8,13 @@ const Explore = () => {
   const [active, setActive] = useState("world-2");
 
   return (
-    <div className={`${styles.paddings}`} id='explore'>
+    <section name='explore'>
       <motion.div
         variants={staggerContainer}
         initial='hidden'
         whileInView='show'
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex flex-col`}
+        className={'mx-auto flex flex-col'}
       >
         <h2
           title={
@@ -36,7 +36,7 @@ const Explore = () => {
           ))}
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 };
 

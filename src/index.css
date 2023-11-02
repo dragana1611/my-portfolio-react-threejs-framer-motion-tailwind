@@ -28,8 +28,9 @@
     @apply text-gray-200;
   }
 
-  a {
-    @apply no-underline text-inherit hover:text-yellow focus:scale-105;
+  a,
+  .link {
+    @apply no-underline text-inherit hover:text-amber-500 focus:scale-105 cursor-pointer;
   }
 
   .section {

@@ -44,7 +44,7 @@ const Contact = () => {
   };
 
   return (
-    <section id='contact' className='section relative'>
+    <section name='contact' className='section relative'>
       <div>
         <p className='text-2xl lg:text-4xl font-bold border-b-4 border-yellow p-2 inline'>
           Contact

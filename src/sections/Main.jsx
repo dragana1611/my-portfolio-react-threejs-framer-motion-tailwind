@@ -10,7 +10,7 @@ import SocialIcons from "../components/SocialIcons";
 
 const Main = () => {
   return (
-    <section id='main' className='section flex flex-col gap-y-6 h-screen'>
+    <section name='main' className='section flex flex-col gap-y-6 h-screen'>
       <Header />
       {/* HERO SECTION */}
       <motion.div
