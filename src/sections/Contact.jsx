@@ -62,7 +62,7 @@ const Contact = () => {
           variants={fadeIn("right", "tween", 0.2, 1)}
           className='w-full h-full flex flex-col justify-start p-4 rounded-[32px] relative border-[1px] border-[#6A6A6A]'
         >
-          <p className='w-full mb-10 lg:leading-8 text-justify lg:text-lg text-base p-5'>
+          <p className='w-full mb-10 lg:leading-8 sm:text-justify lg:text-lg text-base p-5'>
             You are looking for a quality developer who is efficient, meticulous
             and skillful? You want a broadly communicative co-worker who fits
             the team on professional, drive dynamics and human level? The one
@@ -87,10 +87,7 @@ const Contact = () => {
             </div>
           </motion.div>
         </motion.div>
-        <motion.div
-          variants={fadeIn("left", "tween", 0.2, 1)}
-          className='relative w-full h-full flex flex-col justify-center'
-        >
+        <div className='relative w-full h-full flex flex-col justify-center'>
           <form
             ref={form}
             onSubmit={handleSubmit(onSubmit)}
@@ -130,7 +127,7 @@ const Contact = () => {
             {errors.message && <span>This field is required</span>}
             <Buttons type={"submit"} name={"Submit"} />
           </form>
-        </motion.div>
+        </div>
       </motion.div>
     </section>
   );
