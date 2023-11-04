@@ -37,6 +37,10 @@
     @apply w-[90vw] mx-auto mb-10 px-4 lg:p-14 py-8 snap-center overflow-hidden;
   }
 
+  .active {
+    @apply bg-white/20 backdrop-blur-sm rounded-full p-1;
+  }
+
   .btn {
     @apply py-3 px-5 bg-yellow text-secondary text-lg lg:text-xl font-bold flex items-center justify-center rounded-lg hover:bg-amber-500 focus:scale-105 transition-all;
   }
@@ -46,7 +50,7 @@
   }
 
   .icons {
-    @apply text-xl md:text-2xl xl:text-3xl;
+    @apply text-xl md:text-2xl xl:text-3xl text-slate-300;
   }
 
   .footerCol {

@@ -101,7 +101,11 @@ const Contact = () => {
                 className='contactInput w-full md:basis-1/2'
                 placeholder='Name*'
               />
-              {errors.name && <span>This field is required</span>}
+              {errors.name && (
+                <span className='block text-xs text-[#f44646;]'>
+                  This field is required
+                </span>
+              )}
               <input
                 type='email'
                 defaultValue=''
@@ -109,7 +113,7 @@ const Contact = () => {
                 className='contactInput w-full md:basis-1/2'
                 placeholder='Email*'
               />
-              {errors.email && <span>This field is required</span>}
+              {errors.email && <span className='block text-xs text-[#f44646;]'>This field is required</span>}
             </div>
             <input
               type='text'
@@ -124,7 +128,7 @@ const Contact = () => {
               {...register("message", { required: true })}
               placeholder='Message*'
             />
-            {errors.message && <span>This field is required</span>}
+            {errors.message && <span className='block text-xs text-[#f44646;]'>This field is required</span>}
             <Buttons type={"submit"} name={"Submit"} />
           </form>
         </div>
