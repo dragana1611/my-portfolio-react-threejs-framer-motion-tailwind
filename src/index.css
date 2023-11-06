@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair:opsz,wght@5..1200,500&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,12 +22,9 @@
   h3,
   h4,
   h5,
-  h6 {
-    @apply text-gray-200 font-primary;
-  }
-
+  h6,
   p {
-    @apply text-gray-200;
+    @apply text-gray-200 font-primary;
   }
 
   a,
@@ -46,7 +45,7 @@
   }
 
   .contactInput {
-    @apply outline-none bg-transparent border-[1px] border-[#6A6A6A] rounded-sm px-6 py-4 placeholder:text-[#6A6A6A];
+    @apply outline-none bg-transparent border-[1px] border-dark-grey rounded-sm px-6 py-4 placeholder:text-dark-grey;
   }
 
   .icons {

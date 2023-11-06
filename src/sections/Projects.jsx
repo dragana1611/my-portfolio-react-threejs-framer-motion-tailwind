@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-// import { data } from "../data/data";
+
 import { useState } from "react";
 import { motion } from "framer-motion";
 import ExploreCard from "../components/ExploreCard";
@@ -9,8 +9,7 @@ import Buttons from "../components/Buttons";
 
 const Projects = () => {
   const [active, setActive] = useState("project-3");
-  const project = exploreProjects;
-  console.log(project);
+
   return (
     <section name='projects' className='section'>
       <div className='w-full mb-10'>

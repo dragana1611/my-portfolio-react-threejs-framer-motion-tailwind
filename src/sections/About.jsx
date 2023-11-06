@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
+
 import AboutSkillsCard from "../components/aboutSkillsCard";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion";
@@ -5,7 +7,6 @@ import { aboutBlock } from "../data/data";
 import aboutImg from "../assets/images/artificial-intelligence.jpg";
 
 const About = () => {
-  console.log("About block", aboutBlock);
   return (
     <section name='about' className='section'>
       <div className=''>
@@ -37,7 +38,7 @@ const About = () => {
 
         <motion.div
           variants={fadeIn("left", "tween", 0.2, 1)}
-          className='w-full  lg:h-[610px] h-auto flex-1 flex justify-start flex-col gap-5 sm:p-8 xl:p-12 p-4 rounded-[32px] relative border-[1px] border-[#6A6A6A]'
+          className='w-full lg:h-[610px] h-auto flex-1 flex flex-col lg:justify-between gap-3 lg:gap-6 sm:p-8 xl:p-12 p-4 rounded-[32px] relative border-[1px] border-dark-grey'
         >
           {aboutBlock.map((block) => (
             <AboutSkillsCard key={block.title} {...block} />

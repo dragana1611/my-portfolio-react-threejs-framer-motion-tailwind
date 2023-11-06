@@ -4,6 +4,7 @@ export default {
   theme: {
     fontFamily: {
       primary: "Eudoxus Sans, sans-serif ",
+      secondary: "Playfair, serif",
       body: "Eudoxus Sans, sans-serif",
     },
     container: {},
@@ -22,7 +23,7 @@ export default {
         red: "#DC4492",
         yellow: "#FDCC49",
         grey: "#ededed",
-        "dark-grey": "#757575",
+        "dark-grey": "#6a6a6a",
         "opaque-black": "rgba(0,0,0,0.35)",
       },
       backgroundImage: () => ({
