@@ -241,14 +241,14 @@ export const aboutBlock = [
     number: "01",
     title: "Experience",
     text: "My expertise lies in creating dynamic, engaging interfaces through writing clean code and utilizing new-age development tools and techniques. I am a developer with a curious mind that is passionate about making an impact. I love building solutions and solving problems and focused on both large picture and details with whatever technology I work in.",
-    bgColor: "shadow-blue",
+    bgColor: "sky-500",
     position: "start",
   },
   {
     number: "02",
     title: "Innovative",
     text: "Innovative frontend developer with expertise in HTML, CSS, Javascript, React, Tailwind CSS, and many other modern libraries and frameworks. I design and maintain websites that offer a smooth user experience.",
-    bgColor: "shadow-pink-400",
+    bgColor: "pink-400",
     position: "end",
   },
   {

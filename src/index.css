@@ -14,7 +14,7 @@
   }
 
   body {
-    @apply min-w-full font-body text-gray-200  leading-6 bg-[#0c0c1d] flex flex-col;
+    @apply min-w-full font-body text-gray-200  leading-6 bg-secondary flex flex-col;
   }
 
   h1,
@@ -29,7 +29,7 @@
 
   a,
   .link {
-    @apply no-underline text-inherit hover:text-amber-500 focus:scale-105 cursor-pointer;
+    @apply no-underline text-inherit hover:text-amber-500 cursor-pointer;
   }
 
   .section {

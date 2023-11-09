@@ -1,6 +1,6 @@
-/* eslint-disable react/jsx-no-comment-textnodes */
+ 
 
-import AboutSkillsCard from "../components/aboutSkillsCard";
+import AboutSkillsCard from "../components/AboutSkillsCard";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion";
 import { aboutBlock } from "../data/data";

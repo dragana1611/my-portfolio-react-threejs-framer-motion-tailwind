@@ -10,7 +10,7 @@ const Footer = () => {
   });
 
   return (
-    <footer className='w-screen flex flex-col justify-start p-10'>
+    <footer className='section flex flex-col justify-start p-10'>
       <div className='w-full flex flex-col sm:flex-row sm:flex-wrap  items-center'>
         <div className='footerCol'>
           <h3 className='text-xl pb-3'>Dragana Petrovic</h3>

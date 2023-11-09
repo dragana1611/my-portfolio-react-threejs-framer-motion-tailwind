@@ -3,7 +3,7 @@ import logo from "../assets/images/dplogo_circle.png";
 
 const Header = () => {
   return (
-    <header className='w-full h-14 xl:h-16 flex justify-between items-center'>
+    <header className='w-screen h-14 xl:h-16 flex justify-between items-center'>
       <div className='h-full'>
         <img className='w-full h-full object-cover' src={logo} alt='' />
       </div>
