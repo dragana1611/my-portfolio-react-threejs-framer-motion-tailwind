@@ -66,7 +66,7 @@ const Contact = () => {
           variants={fadeIn("right", "tween", 0.2, 1)}
           className="w-full h-full flex flex-col justify-start p-4 rounded-[32px] relative border-[1px] border-[#6A6A6A]"
         >
-          <p className="w-full xl:mb-11 lg:mb-8 mb-10 xl:leading-10 lg:leading-7 sm:text-justify xl:text-[1.25rem] lg:text-[1rem] text-base p-5">
+          <p className="w-full xxl:mb-11 lg:mb-7 mb-10 xxl:leading-10 lg:leading-7 sm:text-justify xxl:text-[1.5rem] lg:text-[0.9rem] text-base p-5">
             You are looking for a quality developer who is efficient, meticulous
             and skillful? You want a broadly communicative co-worker who fits
             the team on professional, drive dynamics and human level? The one
@@ -95,7 +95,7 @@ const Contact = () => {
           <motion.div
             initial={{ opacity: 1 }}
             whileInView={{ opacity: 0 }}
-            transition={{ delay: 3, duration: 10 }}
+            transition={{ delay: 3, duration: 8 }}
             viewport={{ once: true }}
             className="absolute stroke-yellow"
           >
@@ -124,7 +124,7 @@ const Contact = () => {
           <motion.form
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ delay: 13, duration: 1 }}
+            transition={{ delay: 11, duration: 1 }}
             ref={form}
             onSubmit={handleSubmit(onSubmit)}
             className="w-full h-full lg:h-screen flex flex-col justify-between items-centar gap-2 mt-10 lg:mt-0"

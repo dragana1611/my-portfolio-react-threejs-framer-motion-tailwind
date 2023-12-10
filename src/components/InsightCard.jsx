@@ -14,7 +14,7 @@ const InsightCard = ({ imgUrl, text, index }) => (
         className="w-[24px] h-[24px] md:w-[36px] md:h-[36px] object-cover"
       />
       <div className="flex-1 w-full">
-        <p className="font-normal xl:text-[1.25rem] lg:text-[1rem] text-base xl:leading-8">
+        <p className="font-normal xxl:text-[1.5rem] lg:text-[0.9rem] text-base xxl:leading-8">
           {text}
         </p>
       </div>
