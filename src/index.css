@@ -10,7 +10,7 @@
   }
 
   * {
-    @apply p-0 m-0 box-border;
+    @apply p-0 m-0 box-border text-[100%];
   }
 
   body {
