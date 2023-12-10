@@ -17,7 +17,7 @@ const About = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className="w-full lg:h-screen flex flex-col lg:flex-row justify-around items-center py-10 md:py-16 mx-auto mt-14 xl:mt-20 px-2 md:px-4"
+        className="w-full lg:h-screen flex flex-col lg:flex-row justify-around items-center gap-6 py-10 md:py-16 mx-auto mt-14 xl:mt-20 px-2 md:px-4"
       >
         <motion.div
           variants={fadeIn("right", "tween", 0.2, 1)}
@@ -36,7 +36,7 @@ const About = () => {
 
         <motion.div
           variants={fadeIn("left", "tween", 0.2, 1)}
-          className="w-full lg:h-[610px] h-auto flex-1 flex flex-col lg:justify-between gap-3 lg:gap-6 sm:p-8 xl:p-12 p-4 rounded-[32px] relative border-[1px] border-dark-grey"
+          className="w-full lg:h-[610px] h-auto flex-1 flex flex-col lg:justify-between gap-3 lg:gap-4 sm:p-8 xl:p-12 p-4 rounded-[32px] relative border-[1px] border-dark-grey"
         >
           {/* {aboutBlock.map((block) => (
             <AboutSkillsCard key={block.id} {...block} />
