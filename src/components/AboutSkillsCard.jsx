@@ -1,9 +1,19 @@
 /* eslint-disable react/prop-types */
 
-const AboutSkillsCard = ({ number, title, text, bgColor, position }) => {
+const AboutSkillsCard = ({
+  number,
+  title,
+  text,
+  blockColor,
+  blockPosition,
+}) => {
+  console.log(number, title, text, blockColor, blockPosition);
+  const bgClass = `bg-${blockColor}`;
+  const justifyClass = `justify-${blockPosition}`;
+
   return (
-    <div className={`w-full flex justify-${position}`}>
-      <div className={"w-5/6"}>
+    <div className={`${justifyClass} w-full flex flex-col`}>
+      <div className="w-5/6">
         <div className="relative h-20">
           <div className="w-full z-10">
             <p className="font-secondary font-semibold text-3xl tracking-wider">
@@ -14,7 +24,7 @@ const AboutSkillsCard = ({ number, title, text, bgColor, position }) => {
             </p>
           </div>
           <div
-            className={`w-1/2 md:w-3/4 h-20 bg-${bgColor} absolute right-0 top-0 z-[-1]`}
+            className={`${bgClass} w-1/2 md:w-3/4 h-20 absolute right-0 top-0 z-[-1]`}
           />
         </div>
         <p className="font-primary mt-3 lg:text-[13px] lg:text-justify">

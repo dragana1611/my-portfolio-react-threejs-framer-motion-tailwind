@@ -14,7 +14,7 @@
   }
 
   body {
-    @apply min-w-full font-body text-gray-200  leading-6 bg-secondary flex flex-col;
+    @apply min-w-full font-body text-primary  leading-6 bg-secondary flex flex-col;
   }
 
   h1,
@@ -24,7 +24,7 @@
   h5,
   h6,
   p {
-    @apply text-gray-200 font-primary;
+    @apply font-primary text-primary;
   }
 
   a,
