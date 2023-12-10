@@ -97,7 +97,7 @@ const Contact = () => {
             whileInView={{ opacity: 0 }}
             transition={{ delay: 3, duration: 8 }}
             viewport={{ once: true }}
-            className="absolute stroke-yellow"
+            className="absolute stroke-yellow xs:scale-75 scale-100"
           >
             <svg
               fill="#fdcc49"

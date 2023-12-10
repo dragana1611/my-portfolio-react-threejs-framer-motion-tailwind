@@ -17,7 +17,7 @@ const About = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className="w-full lg:h-screen flex flex-col lg:flex-row justify-around items-center gap-6 py-10 md:py-16 mx-auto mt-14 xl:mt-20 px-2 md:px-4"
+        className="w-full lg:h-screen flex flex-col lg:flex-row justify-around items-center py-10 md:py-16 mx-auto mt-14 xl:mt-20 px-2 md:px-4"
       >
         <motion.div
           variants={fadeIn("right", "tween", 0.2, 1)}
@@ -42,8 +42,8 @@ const About = () => {
             <AboutSkillsCard key={block.id} {...block} />
           ))} */}
           <div className="flex justify-start">
-            <div className="w-5/6">
-              <div className="relative h-20">
+            <div className="xs:w-full sm:w-5/6">
+              <div className="relative h-16">
                 <div className="w-full z-10">
                   <p className="font-secondary font-semibold text-3xl tracking-wider">
                     {"01"}
@@ -53,7 +53,7 @@ const About = () => {
                   </p>
                 </div>
                 <div
-                  className={`bg-blue w-1/2 md:w-3/4 h-20 absolute right-0 top-0 z-[-1]`}
+                  className={`bg-blue w-1/2 md:w-3/4 h-16 absolute right-0 top-0 z-[-1]`}
                 />
               </div>
               <p className="font-primary mt-3 lg:text-[13px] text-justify">
@@ -64,8 +64,8 @@ const About = () => {
             </div>
           </div>
           <div className="flex justify-end">
-            <div className="w-5/6">
-              <div className="relative h-20">
+            <div className="xs:w-full sm:w-5/6">
+              <div className="relative h-16">
                 <div className="w-full z-10">
                   <p className="font-secondary font-semibold text-3xl tracking-wider">
                     {"02"}
@@ -75,7 +75,7 @@ const About = () => {
                   </p>
                 </div>
                 <div
-                  className={`bg-red w-1/2 md:w-3/4 h-20 absolute right-0 top-0 z-[-1]`}
+                  className={`bg-red w-1/2 md:w-3/4 h-16 absolute right-0 top-0 z-[-1]`}
                 />
               </div>
               <p className="font-primary mt-3 lg:text-[13px] text-justify">
@@ -86,8 +86,8 @@ const About = () => {
             </div>
           </div>
           <div className="flex justify-start">
-            <div className="w-5/6">
-              <div className="relative h-20">
+            <div className="xs:w-full sm:w-5/6">
+              <div className="relative h-16">
                 <div className="w-full z-10">
                   <p className="font-secondary font-semibold text-3xl tracking-wider">
                     {"03"}
@@ -97,7 +97,7 @@ const About = () => {
                   </p>
                 </div>
                 <div
-                  className={`bg-yellow w-1/2 md:w-3/4 h-20 absolute right-0 top-0 z-[-1]`}
+                  className={`bg-yellow w-1/2 md:w-3/4 h-16 absolute right-0 top-0 z-[-1]`}
                 />
               </div>
               <p className="font-primary mt-3 lg:text-[13px] text-justify">
