@@ -22,7 +22,7 @@ const Projects = () => {
         viewport={{ once: false, amount: 0.25 }}
         className="mx-auto flex flex-col"
       >
-        <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
+        <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-2">
           {exploreProjects.map((project, index) => (
             <ExploreCard
               key={project.id}
