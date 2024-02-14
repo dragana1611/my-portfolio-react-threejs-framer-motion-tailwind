@@ -31,7 +31,7 @@ const ExploreCard = ({
         {title}
       </h3>
     ) : (
-      <div className='absolute bottom-0 p-8 flex justify-start w-full flex-col bg-[rgba(0,0,0,0.8)] rounded-b-[24px]'>
+      <div className='absolute bottom-0 p-4 flex justify-start w-full flex-col bg-[rgba(0,0,0,0.8)] rounded-b-[24px]'>
         <div className='flex justify-start gap-5 mb-3'>
           <a
             href={githubUrl}

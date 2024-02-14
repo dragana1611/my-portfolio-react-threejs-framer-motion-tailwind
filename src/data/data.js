@@ -192,7 +192,7 @@ export const exploreProjects = [
     url: "https://customize-shirt-threejs-ai-tailwind.netlify.app/",
     githubUrl: "https://github.com/dragana1611/project-threejs-ai-tailwind",
     title: "Customize your shirt",
-    tools: "Three.js | TailwindCSS",
+    tools: "Three.js | Tailwind",
   },
   {
     id: "project-4",
