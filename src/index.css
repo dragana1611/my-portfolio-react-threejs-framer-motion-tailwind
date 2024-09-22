@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair:opsz,wght@5..1200,500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply snap-mandatory scroll-smooth;
+  }
+
+  * {
+    @apply p-0 m-0 box-border text-[100%];
+  }
+
+  body {
+    @apply min-w-full font-body text-primary  leading-6 bg-secondary flex flex-col;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    @apply font-primary text-primary;
+  }
+
+  a,
+  .link {
+    @apply no-underline text-inherit hover:text-amber-500 cursor-pointer;
+  }
+
+  .section {
+    @apply w-[90vw] mx-auto mb-10 px-4 lg:p-14 py-8 snap-center overflow-hidden;
+  }
+
+  .active {
+    @apply bg-white/20 backdrop-blur-sm rounded-full p-1;
+  }
+
+  .btn {
+    @apply py-3 px-5 bg-yellow text-secondary text-lg lg:text-xl font-bold flex items-center justify-center rounded-lg hover:bg-amber-500 focus:scale-105 transition-all;
+  }
+
+  .contactInput {
+    @apply outline-none bg-transparent border-[1px] border-dark-grey rounded-sm px-6 py-4 placeholder:text-dark-grey;
+  }
+
+  .icons {
+    @apply text-xl md:text-2xl xl:text-3xl text-slate-300;
+  }
+
+  .footerCol {
+    @apply w-full sm:h-[10rem] md:h-[14rem] sm:basis-1/2  md:basis-1/4 flex flex-col justify-start items-center mb-10 md:mb-0 p-2;
+  }
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
