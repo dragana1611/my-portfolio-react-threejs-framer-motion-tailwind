@@ -1,6 +1,6 @@
 #my-portfolio-react-threejs-framer-motion-tailwind 
 
 
-<img width="939" alt="portfolio" src="https://github.com/dragana1611/my-portfolio-react-threejs-framer-motion-tailwind/assets/77893122/c5ab6f69-284c-404b-9213-30adb8d198f8">
 
 
+![Untitled](https://github.com/user-attachments/assets/4af9474c-44bc-42e9-9bd4-759022f1a7f9)
