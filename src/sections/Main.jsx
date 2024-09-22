@@ -51,7 +51,7 @@ const Main = () => {
                 className='relative font-semibold z-20 before:content-brush
                 before:absolute before:-left-[100px] before:-top-[150px] lg:before:-left-[70px] lg:before:-top-[150px] xl:before:left-8 xl:before:-top-[130px] before:scale-[0.3] md:before:scale-[0.5] before:z-[-1]'
               >
-                Petrovic
+                Popov
               </span>
             </p>
           </div>

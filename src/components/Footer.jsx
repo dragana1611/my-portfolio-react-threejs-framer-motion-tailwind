@@ -13,7 +13,7 @@ const Footer = () => {
     <footer className='section flex flex-col justify-start p-10'>
       <div className='w-full flex flex-col sm:flex-row sm:flex-wrap  items-center'>
         <div className='footerCol'>
-          <h3 className='text-xl pb-3'>Dragana Petrovic</h3>
+          <h3 className='text-xl pb-3'>Dragana Popov</h3>
           <p className='text-center'>A web designer and developer</p>
           <div className='scale-75 md:scale-50 sm:-mt-8 lg:-mt-2'>
             <SpinningBtn />
