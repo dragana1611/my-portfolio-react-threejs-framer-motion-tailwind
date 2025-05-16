@@ -172,8 +172,8 @@ export const exploreProjects = [
   {
     id: "project-1",
     imgUrl: project1,
-    url: "https://live-saska-popov-rasic.pantheonsite.io/",
-    githubUrl: "https://live-saska-popov-rasic.pantheonsite.io/",
+    url: "https://saskapopovrasic.freesite.host/",
+    githubUrl: "",
     title: "WP Portfolio",
     tools: "WordPress",
   },
